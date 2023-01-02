@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {v4 as uuidv5} from 'uuid';
 
 const AddTodo = ({ onAdd }) => {
   const [text, setText] = useState('');
@@ -8,7 +9,7 @@ const AddTodo = ({ onAdd }) => {
     if (text.trim().length === 0) {
       return;
     }
-    onAdd({ id: 'exclusive', text, statatus: 'active' });
+    onAdd({ id: uuidv5(), text, statatus: 'active' });
     setText('');
   };
 
