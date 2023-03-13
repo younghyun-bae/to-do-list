@@ -4,7 +4,7 @@ import { DarkModeProvider } from './components/context/DarkModeContext';
 import Header from './components/Header.jsx/Header';
 import TodoList from './components/TodoList/TodoList';
 
-const filters = ['all', ' active', 'completed'];
+const filters = ['all', 'active', 'completed'];
 
 
 function App() {
